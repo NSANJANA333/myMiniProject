@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The College Website</title>
+     <link rel="stylesheet" href="style1.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link 
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+</head>
+<body>
+   <section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="proimages/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="About.html">ABOUT</a></li>
+               <li><a href="course.html">COURSE></a></li>
+               <li><a href="blog.html">FACILITIES</a></li> 
+               <li><a href="contact.html">CONTACT></a></li>
+            </ul>
+        </div>
+     </ul>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <h1>About Us</h1>
+   </section>
+   <!--about us content  -->
+   <section class="about us">
+     <div class="row">
+         <div class="about-col">
+          <h1>Our college is world class college</h1>   
+            <p>VVIT has emerged as one of the top ten Engineering Colleges from the 
+            200 engineering colleges affiliated to JNTU Kakinada. 
+            The institute also has tie-ups with premier institutes like ISB to
+             develop Entrepreneurial skills of the students.
+             It acheived permanent affiliation to to jntuk,NAAC "A" grade,NBA</p>
+             <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+         </div>
+         <div class="about-col">
+             <img src="proimages/about.png">
+         </div>
+     </div>  
+
+   </section>
+   
+    
+   <section class="footer">
+       <h4>About us</h4>
+       <p>our college is located in nambur village in guntur district
+        with B.tch,M.tech programmes
+        With commitment,setting itself  a benchmark
+        as very best in terms of education,extracurricular
+        activities and placements
+       </p>
+       <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>  
+       </div>
+     <p> Made by <i class="fa fa-heart-o"></i>B6</p>
+   </section>
+   <!-- javascript for menu -->
+   <script>
+       var navLinks=document.getElementById("navLinks");
+       
+       function showMenu(){
+       navLinks.style.right="0";    
+       }
+       function hideMenu(){
+       navLinks.style.right="-200px";    
+       }
+
+   </script>   
+</body>
+</html>

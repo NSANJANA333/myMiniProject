@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The College Website</title>
+     <link rel="stylesheet" href="style2.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link 
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+</head>
+<body>
+   <section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="proimages/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="About.html">ABOUT</a></li>
+               <li><a href="course.html">COURSE></a></li>
+               <li><a href="blog.html">FACILITIES</a></li> 
+               <li><a href="contact.html">CONTACT></a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Our certificates online programs</h1>
+
+   </section>
+   <!-- blog page content -->
+   <section class="blog-content">
+       <div class="row">
+          <div class="blog-left">
+              <h2>Our certificates online programs</h2>
+              <img src="proimages/certificate.png">
+              <p>
+              We offer various certificate and online programs 
+              our college has viva vvit fest for students who participate in that competetion get participation certificates
+              We have coursera the best online platform for developing skills
+            <br>
+            </p>
+            <p>
+            first year students are trained for talent sprint exam to get 100% scholorship in that 
+            Talent sprint helps students to get placed in MNCs  
+            <br>
+            </p>
+            <p>
+                Placement training will be started for students right from second year
+                Training includes Aptitude,Quant,Reasoning 
+                when students come to the end of their 3rd year they will be ready for job<br>
+            </p>
+            <p>
+                Students will also be given projects which makes their RESUME strong<br>
+            </p>
+            <div class="comment box">
+                <h3>Leave comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5"placeholder="Your Comment"></textarea>
+                    <button type="Submit" class="hero-btn red-btn">POST COMMENT</button> 
+                </form>
+
+            </div>
+          </div>
+    
+          <div class="blog-right">
+        
+          <h3>Post categories</h3>
+          <div>
+              <span>DataScience</span>
+              <span>21</span>
+          </div>
+          <div>
+            <span>DataAnalyst</span>
+            <span>28</span>
+        </div>
+        <div>
+            <span>Artificial Intelligence</span>
+            <span>30</span>
+        </div>
+        <div>
+            <span>Machine Learning</span>
+            <span>35</span>
+        </div>
+       </div>
+
+   </section>
+   
+ 
+   
+    <!-- footer -->
+   <section class="footer">
+       <h4>About us</h4>
+       <p>our college is located in nambur village in guntur district
+        with B.tch,M.tech programmes
+        With commitment,setting itself  a benchmark
+        as very best in terms of education,extracurricular
+        activities and placements
+       </p>
+       <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>  
+       </div>
+     <p> Made by <i class="fa fa-heart-o"></i>B6</p>
+   </section>
+   <!-- javascript for menu -->
+   <script>
+       var navLinks=document.getElementById("navLinks");
+       
+       function showMenu(){
+       navLinks.style.right="0";    
+       }
+       function hideMenu(){
+       navLinks.style.right="-200px";    
+       }
+
+   </script>   
+</body>
+</html>
